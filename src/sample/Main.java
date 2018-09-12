@@ -33,6 +33,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Hello World!");
+
         Button btn = new Button();
         btn.setText("Say 'Hello World'");
         btn.setOnAction(new EventHandler<ActionEvent>() {
@@ -43,8 +44,19 @@ public class Main extends Application {
             }
         });
 
+        Button btn2 = new Button();
+        btn2.setText("Send message to smart phone");
+        btn2.setOnAction(new EventHandler<ActionEvent>() {
+
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("Hello World!");
+            }
+        });
+
         StackPane root = new StackPane();
         root.getChildren().add(btn);
+        root.getChildren().add(btn2);
         primaryStage.setScene(new Scene(root, 300, 250));
         primaryStage.show();
     }
