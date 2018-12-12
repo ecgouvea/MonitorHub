@@ -14,6 +14,8 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
+import java.util.List;
+
 public class Main extends Application {
 
 /*
@@ -28,6 +30,18 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
+    }
+
+    private List<String> get() {
+        return null;
+    }
+
+    private List<String> get(Integer id) {
+        return null;
+    }
+
+    public String get(Integer id, Integer id1) {
+        return null;
     }
 
     @Override
